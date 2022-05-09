@@ -63,3 +63,10 @@ This is a very simple, bare-bones NodeJS project created for you to use with Doc
   `ps aux`
 - Quit the shell in the container:
   `exit`
+
+# Horizontal Pod Autoscaler
+
+- Create HPA:
+  `kubectl autoscale deployment <DEPLOYMENT_NAME> --cpu-percent=<CPU_PERCENTAGE> --min=<MIN_REPLICAS> --max=<MAX_REPLICAS>`
+- View HPA:
+  `kubectl get hpa`
